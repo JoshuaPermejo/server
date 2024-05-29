@@ -1,0 +1,27 @@
+GET http://127.0.0.1:8000/api/patients
+
+###
+
+POST http://127.0.0.1:8000/api/patients
+Content-Type: application/json
+
+{
+    "patientId": 3,
+    "patientName": "John",
+    "emailAddress": "john@gmail.com",
+    "ages": 22
+}
+
+###
+PUT http://127.0.0.1:8000/api/patients/1
+Content-Type: application/json
+
+{
+    "patientId": 1,
+    "patientName": "John",
+    "emailAddress": "john@gmail.com",
+    "ages": 22
+}
+
+###
+DELETE http://127.0.0.1:8000/api/patients/1
